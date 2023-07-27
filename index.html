@@ -13,6 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/6e6041f935.js" crossorigin="anonymous"></script>
 
     <!-- custom style  -->
     <style>
@@ -32,10 +34,9 @@
     <header class="max-w-[1920px] mx-auto p-0 px-3 md:px-14 lg:px-24">
         <!-- navbar start  -->
         <div class="mt-5 navbar min-h-full bg-base-100 md:bg-[#F85559] p-0 md:px-8 md:py-6 md:rounded-full">
-            
+
             <!-- logo and icon -->
-            <div class="flex-1 justify-between 
-            lg:flex-initial order-2  gap-2">
+            <div class="flex-1 justify-between flex-row-reverse md:flex-row lg:flex-initial  order-2  gap-2">
                 <!-- drop down start -->
                 <div class="dropdown lg:hidden">
                     <label tabindex="0" class="border-2 border-gray-400 btn btn-ghost ">
@@ -46,19 +47,25 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="dropdown-content mt-1 md:mt-7 z-[1] p-3 shadow rounded-box w-52 flex flex-col gap-2 text-[18px]  text-white primary-bg">
+                        class="dropdown-content right-0 md:left-0 mt-1 md:mt-7 z-[1] p-3 shadow rounded-box w-52 flex flex-col items-center gap-2 text-[18px]  text-white primary-bg">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-                        <li class="md:hidden"> <input type="text" placeholder="Search Here"
-                                class="rounded-full border-0 p-2 w-full" /></li>
+                        <li class="md:hidden">
+                            <div class="relative">
+                                <input type="text" placeholder="Search Here" class="rounded-full border-0 p-3 w-full" />
+                            <i
+                                class="text-2xl  absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 fa-solid fa-magnifying-glass"></i>
+            
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- drow down end  -->
                 <div class="flex gap-2 items-center">
                     <img class="h-10 w-10 object-contain" src="images/logo.png" alt="">
-                    <h3 class="text-4xl font-bold  md:text-white">daisyUI</h3>
+                    <h3 class="text-4xl font-bold  md:text-white">Fruit Burst</h3>
                 </div>
             </div>
             <!-- menu option  -->
@@ -72,8 +79,13 @@
             </div>
             <!-- search bar  -->
             <div class="flex-1 hidden md:flex md:flex-1 md:justify-end order-3">
-                <input type="text" placeholder="Search Here" class="rounded-full border-0 p-3 w-1/2" />
+                <div class="relative w-1/2">
+                    <input type="text" placeholder="Search Here" class="rounded-full border-0 p-3 w-full" />
+                <i
+                    class="text-2xl  absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 fa-solid fa-magnifying-glass"></i>
 
+                </div>
+                
             </div>
         </div>
         <!-- navbar end -->
