@@ -25,13 +25,16 @@
         .primary-bg {
             background-color: #F85559;
         }
+        .slider-bange-shadow{
+            box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <header class="max-w-[1920px] mx-auto p-0 px-3 md:px-14 lg:px-24">
+    <header class="max-w-[1920px] mx-auto px-3 md:px-14 lg:px-24">
         <!-- navbar start  -->
         <div class="mt-5 navbar min-h-full bg-base-100 md:bg-[#F85559] p-0 md:px-8 md:py-6 md:rounded-full">
 
@@ -90,20 +93,44 @@
         </div>
         <!-- navbar end -->
         <!-- slider start  -->
-        <div class="mt-14 carousel w-full">
+        <div class="mt-14 carousel w-full text-white">
             <div id="slide1" class="carousel-item relative w-full">
                 <!-- slider content 1  start-->
                 <div
-                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner1.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay">
-                    <div class="hero-content text-center text-neutral-content">
+                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner1.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay relative">
+                    <div class="hero-content text-center ">
                         <div class="max-w-md">
                             <h1 class="mb-6 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-8">We supply highly quality organic products.</p>
                             <button
-                                class="btn primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 h-auto">Get
+                                class="primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 rounded-lg">Get
                                 Started</button>
                         </div>
                     </div>
+                    <!-- slider badge start  -->
+                    <div class="hidden md:grid gap-7 lg:gap-14 grid-cols-3 lg:grid-cols-5 absolute w-4/5 bg-white px-8 py-6 slider-bange-shadow rounded-lg bottom-0 translate-y-1/2">
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit1.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Grape</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit2.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Orange</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit3.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Apple</h4>
+                        </div>
+                        <div class="text-center  hidden lg:block">
+                            <img class="h-24 w-full object-contain" src="images/fruit4.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Strawberry</h4>
+                        </div>
+                        <div class="text-center hidden lg:block ">
+                            <img class="h-24 w-full object-contain" src="images/fruit5.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Pomegranate</h4>
+                        </div>
+                    </div>
+                    <!-- slider badge end  -->
                 </div>
                 <!-- slider content 1 end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -114,16 +141,40 @@
             <div id="slide2" class="carousel-item relative w-full">
                 <!-- slider content 2  start-->
                 <div
-                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner2.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay">
-                    <div class="hero-content text-center text-neutral-content">
+                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner2.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay relative">
+                    <div class="hero-content text-center ">
                         <div class="max-w-md">
                             <h1 class="mb-6 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-8">We supply highly quality organic products.</p>
                             <button
-                                class="btn primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 h-auto">Get
+                                class="primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 rounded-lg">Get
                                 Started</button>
                         </div>
                     </div>
+                     <!-- slider badge start  -->
+                     <div class="hidden md:grid gap-7 lg:gap-14 grid-cols-3 lg:grid-cols-5 absolute w-4/5 bg-white px-8 py-6 slider-bange-shadow rounded-lg bottom-0 translate-y-1/2">
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit1.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Grape</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit2.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Orange</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit3.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Apple</h4>
+                        </div>
+                        <div class="text-center  hidden lg:block">
+                            <img class="h-24 w-full object-contain" src="images/fruit4.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Strawberry</h4>
+                        </div>
+                        <div class="text-center hidden lg:block ">
+                            <img class="h-24 w-full object-contain" src="images/fruit5.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Pomegranate</h4>
+                        </div>
+                    </div>
+                    <!-- slider badge end  -->
                 </div>
                 <!-- slider content 2 end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -134,16 +185,40 @@
             <div id="slide3" class="carousel-item relative w-full">
                 <!-- slider content 3  start-->
                 <div
-                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner3.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay">
-                    <div class="hero-content text-center text-neutral-content">
+                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner3.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay relative">
+                    <div class="hero-content text-center ">
                         <div class="max-w-md">
                             <h1 class="mb-6 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-8">We supply highly quality organic products.</p>
                             <button
-                                class="btn primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 h-auto">Get
+                                class="primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 rounded-lg">Get
                                 Started</button>
                         </div>
                     </div>
+                     <!-- slider badge start  -->
+                     <div class="hidden md:grid gap-7 lg:gap-14 grid-cols-3 lg:grid-cols-5 absolute w-4/5 bg-white px-8 py-6 slider-bange-shadow rounded-lg bottom-0 translate-y-1/2">
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit1.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Grape</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit2.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Orange</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit3.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Apple</h4>
+                        </div>
+                        <div class="text-center  hidden lg:block">
+                            <img class="h-24 w-full object-contain" src="images/fruit4.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Strawberry</h4>
+                        </div>
+                        <div class="text-center hidden lg:block ">
+                            <img class="h-24 w-full object-contain" src="images/fruit5.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Pomegranate</h4>
+                        </div>
+                    </div>
+                    <!-- slider badge end  -->
                 </div>
                 <!-- slider content 3 end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -154,16 +229,40 @@
             <div id="slide4" class="carousel-item relative w-full">
                 <!-- slider content 4  start-->
                 <div
-                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner4.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay">
-                    <div class="hero-content text-center text-neutral-content">
+                    class="hero  max-h-max md:max-h-full md:min-h-[500px]   bg-[url('images/banner4.png')] bg-[rgba(0,0,0,0.5)] bg-blend-overlay relative">
+                    <div class="hero-content text-center ">
                         <div class="max-w-md">
                             <h1 class="mb-6 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-8">We supply highly quality organic products.</p>
                             <button
-                                class="btn primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 h-auto">Get
+                                class="primary-bg normal-case text-white border-0 text-xl font-bold px-7 py-5 rounded-lg">Get
                                 Started</button>
                         </div>
                     </div>
+                     <!-- slider badge start  -->
+                     <div class="hidden md:grid gap-7 lg:gap-14 grid-cols-3 lg:grid-cols-5 absolute w-4/5 bg-white px-8 py-6 slider-bange-shadow rounded-lg bottom-0 translate-y-1/2">
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit1.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Grape</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit2.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Orange</h4>
+                        </div>
+                        <div class="text-center ">
+                            <img class="h-24 w-full object-contain" src="images/fruit3.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Apple</h4>
+                        </div>
+                        <div class="text-center  hidden lg:block">
+                            <img class="h-24 w-full object-contain" src="images/fruit4.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Strawberry</h4>
+                        </div>
+                        <div class="text-center hidden lg:block ">
+                            <img class="h-24 w-full object-contain" src="images/fruit5.png" alt="">
+                            <h4 class="mt-4 text-[#121212] text-xl">Pomegranate</h4>
+                        </div>
+                    </div>
+                    <!-- slider badge end  -->
                 </div>
                 <!-- slider content 4 end -->
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -174,6 +273,10 @@
         </div>
         <!-- slider end  -->
     </header>
+
+    <main class="max-w-[1920px] mx-auto px-3 md:px-14 lg:px-24">
+
+    </main>
 </body>
 
 </html>
